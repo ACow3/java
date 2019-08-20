@@ -1,0 +1,69 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--  --><<!-- link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="ano -->nymous">
+<title>Checkerboard</title>
+<style>
+	.container{
+		text-align: center;
+		width: 1200px;
+		height: 800px;
+		border: 1px solid black;
+	}
+	
+	.cb_title{
+		font-size: 35pt;
+		text-align: center;
+	}
+	
+	.red_box{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		display: inline-block;
+		
+	}
+	.blue_box{
+		width: 100px;
+		height: 100px;
+		background-color: blue;
+		display: inline-block;
+		
+	}
+</style>
+</head>
+<body>
+
+	<div class="mastercontainer">
+		<div class="container mt-5">
+		<h1 class="cb_title">Checkerboard: 10w X 5h</h1>
+	
+			
+				
+		    <table>
+		   
+		        <tr> 
+		         
+		            <td class='red_box'><div class="red_box"></div></td>
+		            <td class='blue_box'><div class="blue_box"></div></td>
+		           
+		        </tr>
+		        <tr>
+		            
+		            <td class= 'blue_box'><div class="blue_box"></div></td>
+		            <td class= 'red_box'><div class="red_box"></div></td>
+		           
+		        </tr>
+		   
+		    </table>
+		
+		
+		</div>
+		
+	</div>
+
+</body>
+</html>

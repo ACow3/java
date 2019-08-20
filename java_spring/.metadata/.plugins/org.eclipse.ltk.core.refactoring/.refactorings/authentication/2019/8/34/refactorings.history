@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;com.codingdojo.authentication.controllers.Users.userService&apos; in &apos;com.codingdojo.authentication.controllers.Users&apos;&#x0A;- Original project: &apos;authentication&apos;&#x0A;- Original element: &apos;com.codingdojo.authentication.controllers.Users.userService&apos;&#x0A;- Getter method name: &apos;getUserService&apos;&#x0A;- Setter method name: &apos;setUserService&apos;&#x0A;- Field visibility: &apos;public&apos;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;userService&apos;" flags="589830" getter="getUserService" id="org.eclipse.jdt.ui.self.encapsulate" input="/src\/main\/java&lt;com.codingdojo.authentication.controllers{Users.java[Users^userService" insertion="6" setter="setUserService" stamp="1566332577175" version="1.0" visibility="1"/>
+</session>

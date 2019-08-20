@@ -1,0 +1,19 @@
+INDEX VERSION 1.131
+/Users/alexcowling/Desktop/codingdojo/java_stack/java_spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3801250565.index
+/dojos_and_ninjas/src/main/java
+/Users/alexcowling/Desktop/codingdojo/java_stack/java_spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1880365495.index
+/languages/src/main/java
+/Users/alexcowling/Desktop/codingdojo/java_stack/java_spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1346875586.index
+/mvc/src/main/java
+/Users/alexcowling/Desktop/codingdojo/java_stack/java_spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/195823319.index
+/mvc/src/main/java
+/Users/alexcowling/Desktop/codingdojo/java_stack/java_spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3279358768.index
+/dojos_and_ninjas/src/main/java
+/Users/alexcowling/Desktop/codingdojo/java_stack/java_spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3725687863.index
+/authentication/src/main/java
+/Users/alexcowling/Desktop/codingdojo/java_stack/java_spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4142451526.index
+/lookify/src/main/java
+/Users/alexcowling/Desktop/codingdojo/java_stack/java_spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/712961568.index
+/relationships/src/main/java
+/Users/alexcowling/Desktop/codingdojo/java_stack/java_spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1527680688.index
+/relationships/src/main/java

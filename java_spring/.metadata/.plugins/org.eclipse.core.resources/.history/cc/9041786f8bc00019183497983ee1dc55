@@ -1,0 +1,9 @@
+package com.codingdojo.relationships.repositories;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class LicenseRepository extends CrudRepository<License, Long>{
+
+}

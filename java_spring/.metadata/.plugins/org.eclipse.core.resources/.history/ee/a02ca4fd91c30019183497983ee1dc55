@@ -1,0 +1,5 @@
+package com.codingdojo.authentication.validator;
+
+public interface UserValidator {
+
+}

@@ -1,0 +1,37 @@
+package com.objectmaster.om;
+
+public class Samurai extends Human {
+
+	public Samurai() {
+		super();
+		this.health = 200;
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	public void deathBlow(Human attacked) {
+		attacked.health = 0;
+		this.health -= this.health/2;
+	}
+
+	
+//	public void attackHuman(Human attacked) {
+//		attacked.health -= this.health; 
+//		System.out.println("Attack!");
+//		System.out.println("Attacker health is: " + this.health);
+//		System.out.println("Attacked health is: " + attacked.health);
+		
+	}
+	public void ninjaRun() {
+		this.health -= 10;
+	}
+	
+	
+}
+
+//---> deathBlow that attacks an object and decreases its health to 0 
+//&& but also halves the Samurai's health
+//
+//---> meditate which heals the Samurai back to full health
+//
+//---> howMany that returns the current number of Samurai

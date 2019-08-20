@@ -1,0 +1,7 @@
+package com.codingdojo.relationships.services;
+
+@Service
+public class AppService {
+	@Autowired
+	PersonRepository personRepo;
+}

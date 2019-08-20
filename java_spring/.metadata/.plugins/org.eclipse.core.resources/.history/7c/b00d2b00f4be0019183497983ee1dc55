@@ -1,0 +1,13 @@
+package com.codingdojo.lookify.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.codingdojo.lookify.repositories.LookifyRepository;
+
+@Service
+public class LookifyService {
+
+	@Autowired
+	LookifyRepository lookRepository;
+}

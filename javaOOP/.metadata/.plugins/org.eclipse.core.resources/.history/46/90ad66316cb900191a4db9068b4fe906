@@ -1,0 +1,25 @@
+package com.codingdojo.bankaccount;
+
+public class BankAccountTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BankAccount b = new BankAccount();
+		BankAccount b1 = new BankAccount();
+		
+		System.out.println("Bank Account Number: " + b.getAccountNumber());
+		System.out.println("Bank Account Number: " + b1.getAccountNumber());
+		
+		
+		b.deposit("checking", 500.0);
+		b.deposit("savings", 1000.0);
+		
+		System.out.println(b.getChecking());
+		System.out.println(b1.getChecking());
+		
+		System.out.println(b.getSavings());
+		System.out.println(b1.getSavings());
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+INDEX VERSION 1.131+/Users/alexcowling/Desktop/codingdojo/java_stack/java_spring/.metadata/.plugins/org.eclipse.jdt.core
+2294782924.index
+2611080383.index
+2157142632.index
+1654315198.index
+1526550789.index
+1415007467.index
+1952209304.index
+3015989764.index
+3853772588.index
+613502686.index
+3450083292.index

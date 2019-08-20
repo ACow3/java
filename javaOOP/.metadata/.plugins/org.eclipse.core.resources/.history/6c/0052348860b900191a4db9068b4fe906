@@ -1,0 +1,19 @@
+package com.objectmaster.om;
+
+public class Wizard extends Human {
+
+	public Wizard() {
+		super();
+		this.health = 50;
+		this.intelligence = 8;
+		// TODO Auto-generated constructor stub
+	}
+
+}
+
+--> a method called heal that heals whomever it was cast on for an amount 
+equal to the wizard's intelligence
+
+--> a method called fireball that decreases the health of whichever object 
+it attacked by 3 * the wizard's intelligence.
+

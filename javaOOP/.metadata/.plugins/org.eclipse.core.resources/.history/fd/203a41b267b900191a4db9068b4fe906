@@ -1,0 +1,21 @@
+package com.codingdojo.bankaccount;
+
+public class BankAccount {
+	private String accountNumber;
+	private double savings;
+	private double checking;
+	private static int numberOfAccounts = 0;
+	private static double total = 0.0;
+	
+	private String generateAccountNumber() {
+		String acc = "";
+		Random r = new Random();
+		
+		for(i=0; i<10; i++) {
+			acc += String.valueOf(r.nextInt(9));
+		}
+		
+		
+		return acc;
+	}
+}

@@ -1,0 +1,10 @@
+package com.codingdojo.lookify.controllers;
+
+@Controller
+public class LookifyController {
+	
+	@GetMapping("/")
+	public String home() {
+		return "index.jsp";
+	}
+}

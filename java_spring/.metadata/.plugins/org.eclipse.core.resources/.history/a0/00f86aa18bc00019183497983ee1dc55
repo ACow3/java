@@ -1,0 +1,23 @@
+package com.codingdojo.relationships.services;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.codingdojo.relationships.models.Person;
+import com.codingdojo.relationships.repositories.LicenseRepository;
+import com.codingdojo.relationships.repositories.PersonRepository;
+
+@Service
+public class AppService {
+	@Autowired
+	PersonRepository personRepo;
+	
+	@Autowired
+	LicenseRepository licenseRepo;
+	
+	public void createPerson(@Valid Person person) {
+		personRepo.save(person);
+	}
+}

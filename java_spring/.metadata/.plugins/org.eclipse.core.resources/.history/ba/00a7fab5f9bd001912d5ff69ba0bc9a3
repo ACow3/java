@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Languages</title>
+</head>
+<body>
+
+	<div class="mastercontainer">
+		<div class="container">
+
+			<h1>All Languages</h1>
+			<table class="table-bordered">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Creator</th>
+						<th>Version</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<c:forEach items="${languages}" var="language">
+						<tr>
+							<td><c:out value="${language.name}" /></td>
+							<td><c:out value="${language.creator}" /></td>
+							<td><c:out value="${language.version}" /></td>
+							<td>
+							<a class="btn btn-info mt-2" href="languages/edit{id}">Edit</a>
+							<a class="btn btn-danger mt-2" href="${language.id}">Delete</a>							
+							</td>	
+						</tr>
+					</c:forEach>
+				</tbody>
+			</table>
+			<a class="btn btn-warning mt-2" href="/books/new">New Book</a>
+
+		</div>
+	</div>
+
+
+</body>
+</html>

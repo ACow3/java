@@ -1,0 +1,8 @@
+package com.phoneassignment.phones;
+
+public interface Ringable {
+
+	public void ring();
+	
+	public void unlock();
+}

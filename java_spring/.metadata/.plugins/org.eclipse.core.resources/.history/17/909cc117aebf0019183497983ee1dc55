@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ page isErrorPage="true"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Top Ten</title>
+<style>
+.topTen {
+	min-width: 300px;
+	min-height: 200px;
+	border: 2px solid black;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h3>Top Ten Songs:</h3>
+		<div class="topTen">
+			<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+				<h4 id="fat">@fat</h4>
+				<p>...</p>
+				<h4 id="mdo">@mdo</h4>
+				<p>...</p>
+				<h4 id="one">one</h4>
+				<p>...</p>
+				<h4 id="two">two</h4>
+				<p>...</p>
+				<h4 id="three">three</h4>
+				<p>...</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

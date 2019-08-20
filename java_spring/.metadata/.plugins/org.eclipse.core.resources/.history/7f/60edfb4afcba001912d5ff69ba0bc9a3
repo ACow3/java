@@ -1,0 +1,26 @@
+package com.codingdojo.familiar;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CodingController {
+
+	@RequestMapping("/")
+	public String familiar() {		
+		return "Hello Coding Dojo";
+	}
+	
+	
+	@RequestMapping("/python")
+	public String familiar() {		
+		return "Python/Django was awesome!";
+	}
+
+	
+	@RequestMapping("/java")
+	public String familiar() {		
+		return "Java/Spring is better!";
+	}
+	
+}

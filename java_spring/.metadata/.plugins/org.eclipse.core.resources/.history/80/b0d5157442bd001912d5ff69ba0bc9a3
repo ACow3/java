@@ -1,0 +1,11 @@
+package com.codingdojo.mvc.models;
+
+public class Book {
+
+@Entity
+@Table(name="books")
+public class Book {
+	
+}
+	
+}

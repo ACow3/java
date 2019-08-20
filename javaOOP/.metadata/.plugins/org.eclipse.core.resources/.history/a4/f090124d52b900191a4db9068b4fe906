@@ -1,0 +1,22 @@
+package com.zookeeper1.zookeeper;
+
+public class Gorilla extends Mammal {
+	
+	public void throwSomething() {
+		this.energyLevel -= 5;
+		System.out.println("Gorilla has thrown something.");
+	}
+	
+	
+//	public void eatBananas() {
+//		
+//	}
+//	
+//	public void climb() {
+//		
+//	}
+	
+	
+	
+
+}

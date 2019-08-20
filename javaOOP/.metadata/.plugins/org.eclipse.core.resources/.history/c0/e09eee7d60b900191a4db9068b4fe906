@@ -1,0 +1,11 @@
+package com.objectmaster.om;
+
+public class Samurai extends Human {
+
+	public Samurai() {
+		super();
+		this.health = 200;
+		// TODO Auto-generated constructor stub
+	}
+
+}

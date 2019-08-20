@@ -1,0 +1,13 @@
+package com.objectmaster.om;
+
+public class Ninja extends Human {
+
+	public Ninja() {
+		super();
+		this.stealth = 10;
+		// TODO Auto-generated constructor stub
+	}
+
+}
+
+//--> a way to run away that decreases their health by 10

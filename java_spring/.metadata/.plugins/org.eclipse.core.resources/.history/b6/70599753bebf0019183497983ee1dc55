@@ -1,0 +1,14 @@
+package com.codingdojo.dojos_and_ninjas.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.codingdojo.dojos_and_ninjas.services.AppService;
+
+@Controller
+public class DojoController {
+	@Autowired
+	AppService appServ;
+	
+	@GetMapping("/")
+}

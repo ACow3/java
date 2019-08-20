@@ -1,0 +1,11 @@
+package com.objectmaster.om;
+
+public class Wizard extends Human {
+
+	public Wizard() {
+		super();
+		this.health = 50;
+		// TODO Auto-generated constructor stub
+	}
+
+}

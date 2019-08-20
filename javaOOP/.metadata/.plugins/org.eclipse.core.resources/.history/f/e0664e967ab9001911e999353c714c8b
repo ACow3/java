@@ -1,0 +1,20 @@
+package com.codingdojo.calculator;
+
+public class CalculatorTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Calculator c1 = new Calculator(10.5,"+",5.2);
+		Calculator c2 = new Calculator(44.9,"-",12.2);
+		Calculator c3 = new Calculator(12790.0,"+",9496.0);
+		
+		c1.performOperation();
+		c2.performOperation();
+		c3.performOperation();
+		c1.getResults();
+		c2.getResults();
+		c3.getResults();
+	}
+
+}

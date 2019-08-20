@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ page isErrorPage="true"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>New Ninja</title>
+</head>
+<body>
+	<div class="container">
+		<h1>Create New Ninja</h1>
+		<p>
+			<form:errors class="text-danger" path="newNinjaObj.*"></form:errors>
+		</p>
+		<form:form action="/ninja/new" method="post"
+			modelAttribute="newNinjaObj">
+			<p>
+				<form:errors path="newNinjaObj.*"></form:errors>
+				<form:label path="firstName">First Name</form:label>
+				<form:input path="firstName" class="form-control col-6" />
+
+				<form:label path="lastName">last Name</form:label>
+				<form:input path="lastName" class="form-control col-6" />
+
+				<form:label path="age">Age</form:label>
+				<form:input path="age" class="form-control col-6" />
+			</p>
+			<input type="submit" value="Create Ninja" class="btn btn-primary" />
+		</form:form>
+
+		<p>
+			<form:select path="dojo">
+				<c:forEach items="${Dojos}" var="dojo">
+					<form:option value="${dojo.id}" />
+						<c:out value="${dojo.name}" /></form:select>
+				</c:forEach>
+		</p>
+	</div>
+</body>
+</html>

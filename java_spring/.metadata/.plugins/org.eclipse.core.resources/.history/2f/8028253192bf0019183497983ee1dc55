@@ -1,0 +1,33 @@
+package com.codingdojo.lookify.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.codingdojo.lookify.models.Lookify;
+import com.codingdojo.lookify.services.LookifyService;
+
+@Controller
+public class LookifyController {
+	
+	@Autowired
+	LookifyService lookifyService;
+	
+	@GetMapping("/")
+	public String home() {
+		return "lookify/index.jsp";
+	}
+
+	// show all songs
+	@GetMapping("/dashboard")
+	public String dashboard(Model model) {
+		List<Lookify> allSongs = lookifyService.getAllSongs();
+		
+		return "lookify/index.jsp";
+	}
+	
+	
+}

@@ -1,0 +1,23 @@
+package com.phoneassignment.phones;
+
+public class Galaxy extends Phone implements Ringable {
+    public Galaxy(String versionNumber, int batteryPercentage, String carrier, String ringTone) {
+        super(versionNumber, batteryPercentage, carrier, ringTone);
+    }
+//    @Override
+//    public String ring() {
+//	public String ringer = "iPhone" + this.getVersionNumber() + "says" + this.getRingTone();
+////		System.out.println("Ring Ring Ring!");
+//    	return this.ringer;
+//        
+//    }
+    @Override
+    public String unlock() {
+		return null;
+        // your code here
+    }
+    @Override
+    public void displayInfo() {
+        // your code here            
+    }
+}

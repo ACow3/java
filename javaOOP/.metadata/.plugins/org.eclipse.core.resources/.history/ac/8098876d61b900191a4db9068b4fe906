@@ -1,0 +1,18 @@
+package com.objectmaster.om;
+
+public class Samurai extends Human {
+
+	public Samurai() {
+		super();
+		this.health = 200;
+		// TODO Auto-generated constructor stub
+	}
+
+}
+
+//---> deathBlow that attacks an object and decreases its health to 0 
+//&& but also halves the Samurai's health
+//
+//---> meditate which heals the Samurai back to full health
+//
+//---> howMany that returns the current number of Samurai

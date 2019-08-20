@@ -1,0 +1,85 @@
+package com.codingdojo.languages.controllers;
+
+import java.util.List;
+
+import javax.validation.Valid;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.codingdojo.mvc.models.Book;
+import com.codingdojo.mvc.services.BookService;
+
+//@Controller
+//public class LanguageController {
+//	private final LanguageService languageService;
+//
+//	public LanguageController(LanguageService languageService) {
+//		this.languageService = languageService;
+//	}
+//
+//	// show all languages
+//	@RequestMapping("/languages")
+//	public String index(Model model) {
+//		List<Language> languages = languageService.allLanguages();
+//		model.addAttribute("languages", languages);
+//		return "/languages/index.jsp";
+//	}
+//
+//	// render page to create new language
+//	@RequestMapping("/languages/new")
+//	public String newBook(@ModelAttribute("language") Language language) {
+//		return "/languages/new.jsp";
+//	}
+//
+//	// create new language
+//	@RequestMapping(value = "/languages", method = RequestMethod.POST)
+//	public String create(@Valid @ModelAttribute("language") Language language, BindingResult result) {
+//		if (result.hasErrors()) {
+//			return "/languages/new.jsp";
+//		} else {
+//			bookService.createBook(language);
+//			return "redirect:/books";
+//		}
+//	}
+//
+//	// show one book
+//	@RequestMapping(value = "/books/show/{id}")
+//	public String findBook(Model model, @PathVariable("id") Long id) {
+//		Book book = bookService.findBook(id);
+//		model.addAttribute("book", book);
+//		return "/books/show.jsp";
+//	}
+//
+//	// renders edit page
+//	@RequestMapping("/books/{id}/edit")
+//	public String edit(@PathVariable("id") Long id, Model model) {
+//		Book book = bookService.findBook(id);
+//		model.addAttribute("book", book);
+//		return "/books/edit.jsp";
+//	}
+//
+//	// edit one book  
+//	@RequestMapping(value = "/books/{id}", method = RequestMethod.PUT)
+//	public String update(@Valid @ModelAttribute("book") Book book, BindingResult result) {
+//		if (result.hasErrors()) {
+//			return "/books/edit.jsp";
+//		} else {
+//			bookService.updateBook(book);
+//			return "redirect:/books";
+//		}
+//	}
+//
+//	// delete one book
+//	@RequestMapping(value = "/books/{id}", method = RequestMethod.DELETE)
+//	public String destroy(@PathVariable("id") Long id) {
+//		bookService.deleteBook(id);
+//		return "redirect:/books";
+//	}
+
+}

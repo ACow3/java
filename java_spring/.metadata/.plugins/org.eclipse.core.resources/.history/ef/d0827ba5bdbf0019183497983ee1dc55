@@ -1,0 +1,5 @@
+package com.codingdojo.dojos_and_ninjas.repositories;
+
+public interface DojoRepository {
+
+}

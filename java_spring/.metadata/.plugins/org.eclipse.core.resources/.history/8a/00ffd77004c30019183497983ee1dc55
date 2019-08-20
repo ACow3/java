@@ -1,0 +1,5 @@
+package com.codingdojo.manytomany.models;
+
+public class Category {
+
+}

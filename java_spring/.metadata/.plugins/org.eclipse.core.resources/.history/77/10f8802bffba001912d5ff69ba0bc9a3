@@ -1,0 +1,31 @@
+package com.codingdojo.familiar;
+
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class DojoController {
+
+	@RequestMapping("/{dojo}")
+	public String heyDojo(@PathVariable)("dojo") String dojo, @PathVariable("location") String location, @PathVariable("hq") String hq){
+		return "The dojo is awesome!";
+	}
+
+	@RequestMapping("/{location}-dojo")
+	public String showDojo(@PathVariable("location") String location){
+		return "Burbank Dojo is located in Southern California.";
+	}
+
+	@RequestMapping("/{hq}")
+	public String hq(@PathVariable("hq") String hq){
+		return "SJ dojo is the headquarters";
+	}
+	
+}
+
+
+
+//'http://localhost:8080/dojo '
+//
+//'http://localhost:8080/burbank-dojo/'
+//
+//'http://localhost:8080/san-jose/'

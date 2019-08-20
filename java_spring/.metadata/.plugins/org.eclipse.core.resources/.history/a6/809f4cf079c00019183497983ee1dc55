@@ -1,0 +1,9 @@
+package com.codingdojo.dojos_and_ninjas.repositories;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface Ninja extends CrudRepository<Ninja, Long>{
+
+}

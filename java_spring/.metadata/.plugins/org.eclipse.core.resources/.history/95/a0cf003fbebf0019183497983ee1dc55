@@ -1,0 +1,7 @@
+package com.codingdojo.dojos_and_ninjas.controllers;
+
+@Controller
+public class DojoController {
+	@Autowired
+	AppService appServ;
+}

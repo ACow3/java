@@ -1,0 +1,14 @@
+package com.codingdojo.familiar;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CodingController {
+
+	@RequestMapping("/")
+	public String familiar() {		
+		return "Blah blah blah";
+	}
+	
+}

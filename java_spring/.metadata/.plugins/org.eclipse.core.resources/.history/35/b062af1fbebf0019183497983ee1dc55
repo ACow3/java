@@ -1,0 +1,8 @@
+package com.codingdojo.dojos_and_ninjas.services;
+
+@Service
+public class AppService {
+	@Autowired
+	DojoRepository dojoRepo;
+	
+}

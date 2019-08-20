@@ -1,0 +1,68 @@
+package com.codingdojo.mvc.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import javax.validation.Valid;
+
+import org.springframework.stereotype.Service;
+
+import com.codingdojo.mvc.models.Language;
+import com.codingdojo.mvc.repositories.LanguageRepository;
+
+public class LanguageService {
+	
+	@Service
+	public class LanguageService {
+		// adding the language repository as a dependency
+		private final LanguageRepository languageRepository;
+
+		public LanguageService(LanguageRepository languageRepository) {
+			this.languageRepository = languageRepository;
+		}
+
+		// returns all the languages
+		public List<Language> allLanguages() {
+			return languageRepository.findAll();
+		}
+
+		// creates a language
+		public Language createLanguage(Language l) {
+			return languageRepository.save(l);
+		}
+
+		// retrieves a language
+		public Language findLanguage(Long id) {
+			Optional<Language> optionalLanguage = languageRepository.findById(id);
+			if (optionalLanguage.isPresent()) {
+				return optionalLanguage.get();
+			} else {
+				return null;
+			}
+		}
+
+		// updates language
+		public Language updateLanguage(Long id, String title, String desc, String lang, int numOfPages) {
+			Optional<Language> optionalLanguage = languageRepository.findById(id);
+			if (optionalLanguage.isPresent()) {
+				Language language = optionalLanguage.get();
+				language.setName(name);
+				language.setCreator(creator);
+				language.setVersion(version);
+				return languageRepository.save(language);
+			} else {
+				return null;
+			}
+		}
+		
+		// above code pretty much null
+		
+		public void updateLanguage(@Valid Language language) {
+			languageRepository.save(language);
+		}
+
+		// deletes language
+		public void deleteLanguageLong id) {
+			languageRepository.deleteById(id);
+		}
+}

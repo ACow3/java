@@ -1,0 +1,5 @@
+package com.objectmaster.om;
+
+public class Wizard extends Human {
+
+}
